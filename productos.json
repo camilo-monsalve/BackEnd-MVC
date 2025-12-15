@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "sku": "test001",
+        "nombre": "producto test",
+        "precio": 1000.0,
+        "stock": 0,
+        "categoria": "test"
+    }
+]

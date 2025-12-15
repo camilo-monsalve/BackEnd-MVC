@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Producto</title>
+</head>
+<body>
+    <h2>Actualizar Producto</h2>
+    <form method="POST" action="/productos/update">
+        <input type="hidden" name="id" value="{{producto_id}}">
+        <label for="sku">SKU:</label><br>
+        <input type="text" id="sku" name="sku" value="{{producto_sku}}"><br><br>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="{{producto_nombre}}"><br><br>
+        <label for="precio">Precio:</label><br>
+        <input type="number" step="0.01" id="precio" name="precio" value="{{producto_precio}}"><br><br>
+        <label for="stock">Stock:</label><br>
+        <input type="number" id="stock" name="stock" value="{{producto_stock}}"><br><br>
+        <label for="categoria">Categoría:</label><br>
+        <input type="text" id="categoria" name="categoria" value="{{producto_categoria}}"><br><br>
+        <input type="submit" value="Actualizar Producto">
+    </form>
+</body>
+</html>

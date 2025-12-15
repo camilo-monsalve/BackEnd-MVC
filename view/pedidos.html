@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pedidos</title>
+</head>
+<body>
+    <h1>Lista de Pedidos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Cant. Ítems</th>
+                <th>Total</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{pedidos}}
+        </tbody>
+    </table>
+
+    <h2>Crear Pedido</h2>
+    <form method="POST" action="/pedidos">
+        <label for="cliente_id">Cliente ID:</label><br>
+        <input type="number" id="cliente_id" name="cliente_id"><br><br>
+        <!-- Hasta 3 ítems -->
+        <h3>Ítems</h3>
+        <div>
+            <label for="producto_1">Producto 1:</label>
+            <select name="producto_1">
+                {{productos_options}}
+            </select>
+            <label for="cantidad_1">Cantidad:</label>
+            <input type="number" id="cantidad_1" name="cantidad_1" min="1"><br><br>
+        </div>
+        <div>
+            <label for="producto_2">Producto 2:</label>
+            <select name="producto_2">
+                {{productos_options}}
+            </select>
+            <label for="cantidad_2">Cantidad:</label>
+            <input type="number" id="cantidad_2" name="cantidad_2" min="1"><br><br>
+        </div>
+        <div>
+            <label for="producto_3">Producto 3:</label>
+            <select name="producto_3">
+                {{productos_options}}
+            </select>
+            <label for="cantidad_3">Cantidad:</label>
+            <input type="number" id="cantidad_3" name="cantidad_3" min="1"><br><br>
+        </div>
+        <input type="submit" value="Crear Pedido">
+    </form>
+</body>
+</html>

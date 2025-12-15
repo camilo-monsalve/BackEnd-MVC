@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Clientes</title>
+</head>
+<body>
+    <h2> Actualizar Clientes </h2>
+    <form method="POST" action="/update">
+
+        <input type="hidden" name="id" value="{{client_id}}">
+
+        <label for="rut"> Rut: </label> <br>
+        <input type="text" name="rut" id="rut" value="{{client_rut}}"> <br>
+
+        <label for="nombre"> Nombre: </label> <br>
+        <input type="text" name="nombre" id="nombre" value="{{client_name}}"> <br>
+
+        <label for="apellido">  Apellido: </label><br>
+        <input type="text" id="apellido" name="apellido" value="{{client_apell}}"><br>     
+
+        <label for="email"> Email: </label><br>
+        <input type="text" name="email" id="email" value="{{client_email}}"> <br>
+
+        <label for="telefono">  telefono: </label><br>
+        <input type="text" id="telefono" name="telefono" value="{{client_fono}}"><br>
+
+        <label for="direccion">  Direccion: </label><br>
+        <input type="text" id="direccion" name="direccion" value="{{client_direc}}"><br><br>  
+
+        <input type="submit" value="Actualizar Cliente">
+    </form>
+</body>
+</html>

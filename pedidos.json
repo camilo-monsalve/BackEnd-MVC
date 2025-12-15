@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "cliente_id": 1,
+        "items": [
+            {
+                "producto_id": 1,
+                "cantidad": 10,
+                "precio_unitario": 1000.0,
+                "subtotal": 10000.0
+            }
+        ],
+        "total": 10000.0
+    }
+]
